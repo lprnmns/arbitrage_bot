@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.sqlite3
+.env
+.venv/
+*.egg-info/
+
+# Node
+node_modules/
+.next/
+.out/
+
+# Editor
+.idea/
+.vscode/
+.DS_Store
+
+# Runtime
+*.db
+**/dist/
+
+# Local data
+results/*.csv
+results/*.json
+
+# Alembic
+backend/alembic/*.log
