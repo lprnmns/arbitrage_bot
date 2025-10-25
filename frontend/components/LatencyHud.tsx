@@ -1,4 +1,4 @@
-"use client";
+ï»¿"use client";
 
 import { useEffect, useState } from "react";
 
@@ -28,7 +28,7 @@ export function LatencyHud({ heartbeat }: { heartbeat: string | null }) {
     <div className="latency-hud">
       <h3>Latency HUD</h3>
       <div style={{ fontSize: "0.8rem", color: "#9fb5ff", marginBottom: "0.5rem" }}>
-        Feed: {hud.feed} · Last heartbeat: {heartbeat ?? "pending"}
+        Feed: {hud.feed} - Last heartbeat: {heartbeat ?? "pending"}
       </div>
       <div className="stat-grid">
         <div className="stat">
