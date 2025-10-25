@@ -1,6 +1,6 @@
 SHELL := /bin/bash
 
-.PHONY: up down backend-tests fmt
+.PHONY: up down backend-tests fmt check
 
 up:
 	docker compose up --build
@@ -13,3 +13,5 @@ backend-tests:
 
 fmt:
 	npm --prefix frontend run lint
+
+check: backend-tests

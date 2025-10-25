@@ -20,6 +20,8 @@ node_modules/
 
 # Runtime
 *.db
+*.db-wal
+*.db-shm
 **/dist/
 
 # Local data

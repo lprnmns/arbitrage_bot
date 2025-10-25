@@ -1,5 +1,9 @@
 """Smoke test for health endpoint."""
 
+import os
+
+os.environ.setdefault("ENABLE_MARKET_DATA_INGEST", "false")
+
 from fastapi.testclient import TestClient
 
 from app.main import app

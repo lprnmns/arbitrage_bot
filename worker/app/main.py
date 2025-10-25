@@ -28,11 +28,13 @@ class WorkerService:
         while not self._shutdown.is_set():
             payload: dict[str, Any] = {"channel": "worker-heartbeat", "status": "idle"}
             await self._redis.publish("worker-heartbeat", json.dumps(payload))
+            logger.info("Published worker heartbeat: %s", payload)
             await asyncio.sleep(self.settings.heartbeat_interval_sec)
 
     async def close(self) -> None:
         if self._redis:
             await self._redis.close()
+        logger.info("Worker shutdown initiated")
         self._shutdown.set()
 
 

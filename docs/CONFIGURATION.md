@@ -35,5 +35,10 @@ scoring:
   enabled: true
   pairs: [HYPE, SOL, BTC]
   weights: { edge_freq: 0.3, fill_rate: 0.3, pnl_per_hour: 0.3, cancel_rate: -0.1 }
+hl:
+  network: mainnet            # mainnet | testnet (read-only Info WS)
+  fees:
+    spot_fee_bps: null        # UI'dan manuel girilecek; hesaplamalarda bu değer kullanılacak
+    perp_fee_bps: null
 ```
 

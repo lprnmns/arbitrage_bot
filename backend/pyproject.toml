@@ -15,7 +15,9 @@ dependencies = [
     "SQLAlchemy==2.0.31",
     "alembic==1.13.1",
     "httpx==0.27.0",
-    "redis==5.0.4"
+    "redis==5.0.4",
+    "PyYAML==6.0.2",
+    "hyperliquid-python-sdk==0.20.0"
 ]
 
 [project.optional-dependencies]
